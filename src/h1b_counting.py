@@ -1,5 +1,5 @@
 import csv
-
+import sys
 
 def parse_csv(filename, dict_states, dict_occupation):
 
@@ -103,18 +103,28 @@ def h1b_report(input_filename,output_file_occupation,output_file_states):
     dict_states = {}
     dict_occupation = {}
 
+    print("Parsing .csv file and calculating parameters for the output")
     total_certified = parse_csv(input_filename, dict_states, dict_occupation)
 
+    print("Sorting the result according to the given requirements")
     sorted_dict_states = sort_condition(dict_states)
     sorted_dict_occupation = sort_condition(dict_occupation)
 
+    print("Generating .txt file for top 10 states")
     feed_result_states(sorted_dict_states, output_file_states, total_certified)
+    print("Generating .txt file for top 10 occupations")
     feed_result_occupation(sorted_dict_occupation, output_file_occupation, total_certified)
 
 
 if __name__ == "__main__":
-    input_filename = '../insight_testsuite/tests/test_1/input/h1b_input.csv'
-    output_file_states = '../insight_testsuite/tests/test_1/output/top_states.txt'
-    output_file_occupation = '../insight_testsuite/tests/test_1/output/top_occupation.txt'
+    # input_filename = '../insight_testsuite/tests/test_1/input/h1b_input.csv'
+    # output_file_states = '../insight_testsuite/tests/test_1/output/top_states.txt'
+    # output_file_occupation = '../insight_testsuite/tests/test_1/output/top_occupation.txt'
+
+    input_filename = sys.argv[1]
+    output_file_states = sys.argv[3]
+    output_file_occupation = sys.argv[2]
+    print("EXECUTING h1b_counting.py")
 
     h1b_report(input_filename,output_file_occupation,output_file_states)
+    print("Finished the program. Now check the files in output folder")
