@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2f5c0d1-bf88-4582-b2df-a9bcd9396614" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/insight_testsuite/tests/test_1/output/top_occupation.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/insight_testsuite/tests/test_1/output/result.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/h1b_counting.py" afterPath="$PROJECT_DIR$/src/h1b_counting.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -245,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541037028706</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Used csv library and added dictionaries to take state counts and occupation counts">
+      <created>1541054166806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541054166806</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
