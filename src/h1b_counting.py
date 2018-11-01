@@ -1,8 +1,7 @@
-import os.path as pth
 import csv
 
 
-def parsecsv(filename, dict_states, dict_occupation):
+def parse_csv(filename, dict_states, dict_occupation):
 
     total_certified = 0
     with open(filename, 'r') as csvfile:
@@ -29,6 +28,7 @@ def parsecsv(filename, dict_states, dict_occupation):
 
                     if header == "SOC_NAME":
                         occupation_index = header_index
+
                     header_index += 1
 
             else:
@@ -103,17 +103,13 @@ def h1b_report(input_filename,output_file_occupation,output_file_states):
     dict_states = {}
     dict_occupation = {}
 
-    total_certified = parsecsv(input_filename, dict_states, dict_occupation)
+    total_certified = parse_csv(input_filename, dict_states, dict_occupation)
 
     sorted_dict_states = sort_condition(dict_states)
     sorted_dict_occupation = sort_condition(dict_occupation)
 
     feed_result_states(sorted_dict_states, output_file_states, total_certified)
     feed_result_occupation(sorted_dict_occupation, output_file_occupation, total_certified)
-
-    print(sorted_dict_states)
-    print(sorted_dict_occupation)
-    print(total_certified)
 
 
 if __name__ == "__main__":
