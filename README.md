@@ -1,4 +1,4 @@
-#Insight Data Science Challenge/h1bstatistics
+# Insight Data Science Challenge/h1bstatistics
 
 Used python language to solve the challenge.
 Here are the following approaches I used in the challenge.
