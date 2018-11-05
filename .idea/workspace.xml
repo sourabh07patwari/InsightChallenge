@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2f5c0d1-bf88-4582-b2df-a9bcd9396614" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/insight_testsuite/tests/test_2/input/h1b_input.csv" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/insight_testsuite/tests/test_2/output/top_10_occupations.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/insight_testsuite/tests/test_2/output/top_10_states.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/insight_testsuite/results.txt" afterPath="$PROJECT_DIR$/insight_testsuite/results.txt" />
-      <change beforePath="$PROJECT_DIR$/insight_testsuite/temp/input/h1b_input.csv" afterPath="$PROJECT_DIR$/insight_testsuite/temp/input/h1b_input.csv" />
-      <change beforePath="$PROJECT_DIR$/insight_testsuite/temp/output/top_10_occupations.txt" afterPath="$PROJECT_DIR$/insight_testsuite/temp/output/top_10_occupations.txt" />
-      <change beforePath="$PROJECT_DIR$/insight_testsuite/temp/output/top_10_states.txt" afterPath="$PROJECT_DIR$/insight_testsuite/temp/output/top_10_states.txt" />
-      <change beforePath="$PROJECT_DIR$/insight_testsuite/temp/src/h1b_counting.py" afterPath="$PROJECT_DIR$/insight_testsuite/temp/src/h1b_counting.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -272,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541414985260</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Latest Commit">
+      <created>1541416980045</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541416980045</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -456,6 +455,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
