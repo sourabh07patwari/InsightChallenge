@@ -85,11 +85,8 @@ def feed_result_states(state_info, filename, total_certified):
         for item in state_info:
             if row_num <= 10:
                 percentage = calculate_percentage(item[1], total_certified)
-                f.write("%s;" % item[0])
-                f.write("%s;" % item[1])
-                f.write("%s" % percentage)
-                f.write("%")
-                f.write("\n")
+                str_row = [str(item[0]), ";", str(item[1]), ";", str(percentage), "%", "\n"]
+                f.writelines(str_row)
             row_num += 1
 
 
@@ -103,11 +100,8 @@ def feed_result_occupation(occupation_info, filename, total_certified):
         for item in occupation_info:
             if row_num <= 10:
                 percentage = calculate_percentage(item[1], total_certified)
-                f.write("%s;" % item[0])
-                f.write("%s;" % item[1])
-                f.write("%s" % percentage)
-                f.write("%")
-                f.write("\n")
+                str_row = [str(item[0]), ";", str(item[1]), ";", str(percentage), "%", "\n"]
+                f.writelines(str_row)
             row_num += 1
 
 
